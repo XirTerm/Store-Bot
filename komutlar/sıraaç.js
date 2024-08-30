@@ -29,7 +29,7 @@ module.exports = {
 		.setStyle('SECONDARY'),
 		new MessageButton()
 		.setCustomId('fiyat-embed')
-		.setLabel('Pet Simulator X Fiyatları')
+		.setLabel('Yedek kategori')
 		.setEmoji("🐶")
 		.setStyle('SECONDARY')
 		);
@@ -43,7 +43,7 @@ module.exports = {
 
 name: "sıra-sistemi",
 description: "",
-aliases: ['sırasistemi,', 'sirasistemi', 'sira-sistemi', 'sıra', 'sira'],
+aliases: ['sırasistemi,', 'sirasistemi', 'sira-sistemi', 'sıra', 'sira', 'satış', 'satis', 'sat'],
 kategori: "",
 usage: "",
 }
