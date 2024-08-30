@@ -25,7 +25,7 @@ const { Modal, TextInputComponent, showModal } = require('discord-modals')
 const discordModals = require('discord-modals') 
 discordModals(client); 
 
-const buxtoresystems = new Modal() 
+const storebot = new Modal() 
 .setCustomId('form')
 .setTitle('Sıraya Giriş')
 .addComponents(
@@ -73,7 +73,7 @@ const buxtoresystems = new Modal()
 client.on('interactionCreate', async (interaction) => {
 
 	if(interaction.customId === "sıra"){
-		showModal(buxtoresystems, {
+		showModal(storebot, {
 			client: client, 
 			interaction: interaction 
 		  })
