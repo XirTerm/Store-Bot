@@ -35,7 +35,7 @@ const buxtoresystems = new Modal()
   .setStyle('SHORT') 
   .setMinLength(2)
   .setMaxLength(30)
-  .setPlaceholder('Örnek: 1,000 Robux...')
+  .setPlaceholder('Örnek: 1,000 owo coin...')
   .setRequired(true)
 )
 .addComponents(
@@ -55,13 +55,13 @@ const buxtoresystems = new Modal()
 	.setMinLength(3)
 	.setMaxLength(20)
 	.setStyle('SHORT') 
-	.setPlaceholder('Sadece İninal, Papara ve Banka Kartları geçerli.')
+	.setPlaceholder('İninal, Papara, Ziraat Bankası vs...')
 	.setRequired(true)
 	) 
   .addComponents(
 	new TextInputComponent() 
 	.setCustomId('hazır-durum')
-	.setLabel('ALIŞVERİŞ İÇİN HERŞEYİNİZ HAZIRMI?')
+	.setLabel('ALIŞVERİŞ İÇİN HERŞEYİNİZ HAZIR MI?')
 	.setStyle('SHORT') 
 	.setMinLength(4)
 	.setMaxLength(4)
@@ -80,76 +80,38 @@ client.on('interactionCreate', async (interaction) => {
 	}
 	if (interaction.customId == "satis-embed") {
 		const embed = new MessageEmbed()
-		.setImage(`https://cdn.discordapp.com/attachments/930806442301214781/991631633868402718/unknown.png`)
-		.setAuthor({ name: 'Buxtore | Bilgi'})
-		.setDescription(`**🎉 BÜYÜK İNDİRİM!
-		Acele edin! Fiyatlar yakında tekrar yükselebilir!
-		
-		<:bux:918079338631536710> Stok: Sınırsız! ∞
-		
-		:package: Ürünler __5-7 gün sonra__ hesabınıza geçecek!
-		
-		:credit_card: Ödeme Yöntemleri: İninal , Papara , Banka Kartları
-		:point_right: Satın almak için sıraya girmeniz gerekiyor. Sıraya girmek için <#748186293854404688>
-		
-		<a:MI_info_warn:805256892023701504> Önemli NOT: Tüm <:bux:918079338631536710> işlemleri sunucuda gerçekleşecek ve hiçbir şey özel mesaj üzerinden yapılmayacak. Özelden bizim adımıza mesaj gelirse önce engelleyip sonrasında bize bildirebilirsiniz.**
-		
-		Detaylı Bilgi :small_red_triangle_down:`)
-		.setColor(`#58ff65`)
-		.setThumbnail(`https://emoji.gg/assets/emoji/6588_robux.png`)
-		.setFooter({ text: `Buxtore • 05.11.2019'dan beri...`, iconURL: 'https://media.discordapp.net/attachments/735712733294755851/919917414966255616/5a90d63f2ea422cc2387a94d3b60b9af.png?width=683&height=683' });
+		.setImage(``)
+		.setAuthor({ name: ''})
+		.setDescription(``)
+		.setColor(``)
+		.setThumbnail(``)
+		.setFooter({ text: ``, iconURL: '' });
 		interaction.reply({embeds:[embed], ephemeral:true})
 	}
 	if (interaction.customId == "fiyat-emebd") {
 		const embed1 = new MessageEmbed()
-		.setTitle(`Aşağıdaki ürünleri belirtilen fiyatlara __bizden__ satın alabilirsiniz.`)
-		.setDescription(`<:dominusastra:917731544225951774> **Dominus Astra** - \`90₺\`
-		<:electric_slime:879144763037732894> **Electric Slime** - \`90₺\`
-		<:Wickednew:925130997249495040> **Wicked Angelus** - \`90₺\`
-		<:mimic:879137874224771132> **Chest Mimic** - \`90₺\`
-		<:storm_wolf:881435518620028968> **Storm Wolf** - \`90₺\`
-		<:galaxy_pegasus:897001412460941352> **Galaxy Pegasus** - \`90₺\`
-		<:empyrean_agony:897001412389650462> **Empyrean Agony** - \`90₺\`
-		<:dominusdarkwing:901504747348066305> **Dominus Darkwing** - \`90₺\`
-		<:mushroom_king:881435517286252585> **Mushroom King** - \`90₺\`
-		<:noobortus:881436620551770152> **Noobortuus** - \`90₺\`
-		<:galaxy_dragon:879138698611032064> **Galaxy Dragon** - \`90₺\`
-		<:domortuus_astra:881436631775735848> **Domortuus Astra** - \`90₺\`
-		<:nebula_dragon:897001411185885195> **Nebula Dragon** - \`90₺\`
-		<:signature_mascot:879144779689119774> **Signature BIG Maskot** - \`90₺\`
-		<:blue_big_maskot:897001411315912704> **Blue BIG Maskot** - \`90₺\`
-		<:rainbowbluebigmaskot:969615609665036348> **Rainbow Blue BIG Maskot** - \`100₺\`
-		
-		<:exclusiveegg:991372740739219466> **YENİ Exclusive Egg** - \`40₺\``)
-		.setColor(`#c38dff`)
-		.setThumbnail(`https://cdn.discordapp.com/attachments/926076002680066049/975030058815205436/rainbow_blue_big_maskot.png`)
-		.setFooter({ text: `Buxtore • 05.11.2019'dan beri...`, iconURL: 'https://media.discordapp.net/attachments/735712733294755851/919917414966255616/5a90d63f2ea422cc2387a94d3b60b9af.png?width=683&height=683' });
+		.setTitle(``)
+		.setDescription(``)
+		.setColor(``)
+		.setThumbnail(``)
+		.setFooter({ text: ``, iconURL: '' });
 		
 	
 	if (interaction.customId == "fiyat-embed") {
 		const embed2 = new MessageEmbed()
-		.setTitle(`Aşağıdaki ürünleri belirtilen fiyatlara __bizden__ satın alabilirsiniz.`)
-		.setDescription(`<:darkmatterpixeldemon:957319645348659200> **Pet Simulator X Mythical Pet:**
-
-		<:darkmatterpixeldemon:957319645348659200> **20 Adet Dark Matter Pixel Demon:** \`10₺\` *(~170T Güç)*
-		:point_up_2: Büyük İndirim! :gift:`)
-		.setColor(`#e256e2`)
-		.setThumbnail(`https://cdn.discordapp.com/attachments/926076002680066049/969601698807029790/darkmatterpixeldemon.png`)
-		.setFooter({ text: `Buxtore • 05.11.2019'dan beri...`, iconURL: 'https://media.discordapp.net/attachments/735712733294755851/919917414966255616/5a90d63f2ea422cc2387a94d3b60b9af.png?width=683&height=683' });
+		.setTitle(``)
+		.setDescription(``)
+		.setColor(``)
+		.setThumbnail(``)
+		.setFooter({ text: ``, iconURL: '' });
 
 		if (interaction.customId == "fiyat-embed") {
 			const embed3 = new MessageEmbed()
-			.setTitle(`Aşağıdaki ürünleri belirtilen fiyatlara __bizden__ satın alabilirsiniz.`)
-			.setDescription(`**<:psxgems:927497942661742643> Pet Simulator X Elmas:**
-
-			<:psxgems:927497942661742643> **5B Elmas:** 5₺
-			<:psxgems:927497942661742643> **10B Elmas:** 10₺
-			<:psxgems:927497942661742643> **25B Elmas:** 15₺  | \`Avantajlı\`
-			<:psxgems:927497942661742643> **100B Elmas:** 37,50₺ | \`Popüler\`
-			<:psxgems:927497942661742643> **250B Elmas:** 75₺ | \`En İyi Teklif\``)
-			.setColor(`#58f8ff`)
-			.setThumbnail(`https://media.discordapp.net/attachments/926076002680066049/969651597971955733/Images-Diamond-Small-Outline.png`)
-			.setFooter({ text: `Buxtore • 05.11.2019'dan beri...`, iconURL: 'https://media.discordapp.net/attachments/735712733294755851/919917414966255616/5a90d63f2ea422cc2387a94d3b60b9af.png?width=683&height=683' });
+			.setTitle(``)
+			.setDescription(``)
+			.setColor(``)
+			.setThumbnail(``)
+			.setFooter({ text: ``, iconURL: '' });
 		interaction.reply({embeds:[embed1, embed2, embed3], ephemeral:true})
 	}}}
 	if(interaction.customId === "sahipban"){
@@ -221,12 +183,12 @@ client.on('interactionCreate', async (interaction) => {
 				type: "text" 
 			  } 
 			); 
-		ticketChannel.setParent("735712708904615967")
+		ticketChannel.setParent(`${ayarlar.kategoriid}`)
 
 		const row = new MessageActionRow()
 		.addComponents(
 		new MessageButton()
-		.setURL(`https://discord.com/channels/843087937737719821/${ticketChannel.id}`)
+		.setURL(`https://discord.com/channels/${ayarlar.sunucuid}/${ticketChannel.id}`)
 		.setLabel('Alışveriş Kanalı')
 		.setStyle('LINK')
 		.setDisabled(false)
@@ -256,13 +218,9 @@ ticketChannel.permissionOverwrites.create(interaction.guild.id, {  VIEW_CHANNEL:
 
 	Ücreti aşağıdaki kartlardan hangisini kullanıyorsan oraya gönderebilirsin.
 	Siparişin: **${sıragiriş}**
-	Göndereceğin ücret: **${siparişfiyatı} TL**
-	
-	**İninal:** 4000840219415 | **Alıcı:** AH ER
-	**Papara:** 1700635037 | **Alıcı:** İ K
-	**Banka Kartı:** TR08 0001 0000 6790 1815 0650 01 | **Alıcı:** Melih Kardeş`}) 
+	Göndereceğin ücret: **${siparişfiyatı} TL**`}) 
 
-ticketChannel.send({content: `https://cdn.discordapp.com/attachments/735712725476442113/735717129050914917/buxtorelogo.png`})
+ticketChannel.send({content: ``})
 }}) 
 
 
@@ -381,7 +339,7 @@ client.on('modalSubmit',async (modal) => {
         .setDisabled(true),
 
 		new MessageButton()
-		.setURL(`https://linktr.ee/uzmanist`)
+		.setURL(`https://linktr.ee/xirterm`)
 		.setLabel('Bot Geliştiricisi')
 		.setStyle('LINK'),
 		);
@@ -401,7 +359,7 @@ client.on('modalSubmit',async (modal) => {
 		**İD:** \`${modal.user.id} ${modal.user.username}\`
 		**Etiket:** <@${modal.user.id}>
 		`)
-		.setImage("https://cdn.discordapp.com/attachments/735712725476442113/735717129050914917/buxtorelogo.png")
+		.setImage("")
 		client.channels.cache.get(ayarlar.botlog).send({embeds:[embed],components: [row]}).then(c => {
 			db.set(`onay-red-mesaj_${c.id}`, modal.user.id)
 		})
